@@ -21,6 +21,7 @@ async function fetchJokes() {
         });
         const result = await response.json();
         jokesSection.innerText = result[0].joke;
+        // jokesSection.style.display.border = "2px solid black";
         btn.disabled = false;
         btn.innerText = "Tell me a Joke";
         return result;
